@@ -4,6 +4,8 @@ const port = 3000;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 app.get("/cities", (req,res) => {
+    const test = require('./city.list.json')
+    console.log(test[0])
     const cities = [
     {
       id: 1,
