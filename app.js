@@ -30,29 +30,4 @@ app.get("/cities", (req,res) => {
    res.send(searchResults);
   });
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-    const cities = [
-    {
-      id: 1,
-      name: "boston",
-    },
-    {
-        id: 2,
-        name: "boston",
-      },
-    {
-      id: 3,
-      name: "new york",
-    },
-    ,
-    {
-      id: 4,
-      name: "salem",
-    },
-   ];
 
-   //req.headers.city
-   let searchResults = cities.filter(res => res.name.includes(req.headers.city))
-   console.log(searchResults)
-   res.send(searchResults);
-  });
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
