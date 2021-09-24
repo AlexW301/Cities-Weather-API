@@ -5,8 +5,6 @@ const port = 3000;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 app.get("/cities", (req,res) => {
-
-
    //req.headers.city
   //  console.log(cities.filter(word => word.name.includes('Boston')))
    let searchResults = cities.filter(word => word.name.includes(req.headers.city))

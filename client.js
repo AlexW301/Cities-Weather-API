@@ -4,7 +4,7 @@ http.get({
   port: 3000,
   hostname: 'localhost',
   path: '/cities',
-  headers: { city: 'boston'}
+  headers: { city: 'Boston'}
 }, (res) => {
   console.log("connected");
   res.on("data", (chunk) => {
