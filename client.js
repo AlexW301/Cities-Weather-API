@@ -1,10 +1,10 @@
-const http = require('http');
+const https = require('https');
 
-http.get({
-  port: 3000,
-  hostname: 'localhost',
+https.get({
+  port: 8080,
+  hostname: 'weather-by-cities.azurewebsites.net',
   path: '/cities',
-  headers: { city: 'Boston'}
+  headers: { city: 'Boston'},
 }, (res) => {
   console.log("connected");
   res.on("data", (chunk) => {

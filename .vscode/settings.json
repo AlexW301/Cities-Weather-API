@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/675c09d3-57da-44ec-9041-86f791e959a6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/weather-by-cities",
+    "appService.deploySubpath": "."
+}

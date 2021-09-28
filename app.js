@@ -1,7 +1,9 @@
 const express = require('express');
 let cities = require('./city.list.json'); // your json file path
 const app = express();
-const port = 3000;
+const port = 8080;
+
+app.use(express.static('./city.list.json'))
 
 app.get('/', (req, res) => res.send('Hello World!'));
 app.get("/cities", (req,res) => {
